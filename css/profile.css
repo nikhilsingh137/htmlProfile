@@ -2546,4 +2546,17 @@ body {
   .message {
     width: 100% !important;
   }
+
+  .study {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .study .power {
+    width: 0;
+  }
+
+  .study .file {
+    width: 65%;
+  }
 }
