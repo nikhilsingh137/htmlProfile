@@ -83,6 +83,10 @@ body {
   width: 31%;
 }
 
+.main ul li.active i {
+  color: #04b4e0;
+}
+
 /* .mainbox.fixed-mainbox {
   position: sticky;
   top: 10px;
