@@ -2577,3 +2577,18 @@ body {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+  .side {
+    display: block;
+  }
+
+  .mainbox {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0;
+  }
+}
