@@ -2581,6 +2581,7 @@ body {
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
   .side {
     display: block;
+    width: 8%;
   }
 
   .mainbox {
@@ -2592,7 +2593,7 @@ body {
   }
 
   .content {
-    width: 100%;
+    width: 61%;
     padding: 0;
   }
 }
