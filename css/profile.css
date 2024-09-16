@@ -2175,13 +2175,14 @@ body {
   }
 }
 
-@media only screen and (max-width: 992px) and (min-width: 768px) {
+@media only screen and (max-width: 767px) and (min-width: 360px) {
   .side {
     display: none;
   }
 
-  .mainbox {
-    display: none;
+  .content {
+    width: 100%;
+    padding: 0;
   }
 
   .main ul {
@@ -2189,8 +2190,7 @@ body {
   }
 
   .ten {
-    position: absolute;
-    display: block;
+    position: fixed;
     width: 48px;
     height: 48px;
     line-height: 46px;
@@ -2200,7 +2200,8 @@ body {
     font-size: 19px;
     top: 10px;
     border-radius: 30px;
-    z-index: 9;
+    z-index: 999;
+    display: block;
   }
 
   .mainbox {
@@ -2209,34 +2210,340 @@ body {
     right: 0px;
     width: 100%;
     background: #444;
-    overflow-y: scroll;
+    z-index: 8;
+    left: 0;
+    display: none;
+    padding-bottom: 20px;
+  }
+
+  .mainbox .wrapper {
+    overflow: auto;
+  }
+
+  .mainbox .wrapper .main ul li {
+    line-height: 45px;
+  }
+
+  .mainbox .wrapper .main ul li a {
+    font-size: 19px;
+  }
+
+  .mainbox .wrapper .icons {
+    margin-top: 20px;
+  }
+
+  .mainbox .wrapper .cv {
+    padding-bottom: 30px;
+  }
+
+  .mainbox .wrapper .reserved {
+    display: none;
+  }
+
+  .template {
+    padding: 0px 20px;
+  }
+
+  .template .text {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .template .resistance {
+    margin-top: 30px;
+  }
+
+  .template .resistance .address p {
+    font-size: 19px;
+    line-height: 30px;
+    font-family: math;
+  }
+
+  .template .resistance .phone {
+    margin-top: 20px;
+  }
+
+  .template .resistance .phone h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .template .resistance .phone h2 span {
+    margin: 0;
+  }
+
+  .template .web .plus {
+    padding: 0;
+  }
+
+  .template .web .plus .design {
+    line-height: 0;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .template .web .plus .design h2 {
+    margin: 10px 0px;
+    font-size: 25px;
+    background: url(https://cdn.shopify.com/s/files/1/0070/7032/files/ecommerce_20platforms.png?v=1701447416);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 8vh;
+    padding-top: 17px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .template .web .plus .design i {
+    margin: 0;
+  }
+
+  .template .web .plus .design p {
+    line-height: 25px;
+    text-align: justify;
+    font-family: system-ui;
+    font-size: 16px;
+  }
+
+  .template .component {
+    padding: 40px 0px;
+  }
+
+  .template .component .photo {
+    width: 100%;
+  }
+
+  .template .component .photo img {
+    margin: auto;
+  }
+
+  .component .owl-nav {
+    top: -70px;
+  }
+
+  .component .owl-carousel .owl-nav button.owl-prev {
+    padding: 0 !important;
+  }
+
+  .component .owl-carousel .owl-nav button.owl-next {
+    padding: 0 !important;
+  }
+
+  .contentbox h2 {
+    font-size: 50px;
+  }
+
+  .resistance {
+    display: block;
+  }
+
+  .address {
+    width: 100%;
+  }
+  .phone {
+    width: 100%;
+  }
+  .design {
+    width: 100%;
+  }
+
+  .plus {
+    display: block;
+  }
+
+  .pricing {
+    display: block;
+    padding: 0;
+  }
+  .silver {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .blog {
+    display: block;
+  }
+
+  .silver1 {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .table {
+    display: block;
+  }
+
+  .education {
+    width: 100%;
+  }
+
+  .drop {
+    width: 100%;
+  }
+
+  .certificate {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .date {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .fun {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .resume {
+    padding: 0px 20px;
+  }
+
+  .print .media ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .print .media ul li {
+    display: inline-block;
+    background-color: #04b4e0;
+    border-radius: 3px;
+    color: #fff;
+    padding: 13px 0px;
+    margin: 0px 2px;
+    font-size: 13px;
+    width: 47%;
+    text-align: center;
+  }
+
+  .member {
+    display: block;
+    width: 60%;
+    padding: 15px 30px;
+    margin: 0;
+  }
+  .member h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 25px;
+  }
+
+  .member h3 {
+    margin-top: 10px;
+    line-height: 20px;
+  }
+
+  .port {
+    padding: 0px 20px;
+  }
+
+  .happy {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .navigation ul {
+    flex-wrap: wrap;
+  }
+
+  .navigation ul li {
+    padding: 5px 10px;
+  }
+
+  .tent {
+    flex-wrap: wrap;
+  }
+
+  .tent .project {
+    width: 100%;
+  }
+
+  .tent .size {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .soap .size {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .price .praise {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .rock .audio {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .tube .total {
+    width: 100%;
+    padding-bottom: 20px;
   }
 
   .paint {
-    width: 48%;
+    width: 100% !important;
+  }
+
+  .sketch {
+    padding: 0px 20px;
   }
 
   .progress {
+    padding-bottom: 20px;
+  }
+
+  .practice ul li {
+    margin-top: 10px;
+  }
+
+  .practice ul li a span {
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
     display: block;
+    height: 0;
+  }
+
+  .footer {
+    padding: 0px 20px;
   }
 
   .practice {
     width: 100%;
   }
 
-  .practice img {
+  .footerbox {
     width: 100%;
   }
 
-  .message {
-    width: 43%;
+  .banner {
+    width: 100%;
   }
 
-  .message input {
-    padding: 72px 10px;
+  .bannerbox {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .holder {
+    display: block;
+    width: 100%;
   }
 
   .name {
-    width: 43%;
+    width: 100% !important;
+  }
+
+  .message {
+    width: 100% !important;
   }
 }
