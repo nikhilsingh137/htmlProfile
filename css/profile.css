@@ -2572,4 +2572,8 @@ body {
   .study1 .file1 {
     width: 65%;
   }
+
+  .practice img {
+    width: 100%;
+  }
 }
