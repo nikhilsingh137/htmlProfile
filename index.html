@@ -1101,8 +1101,8 @@
         });
       });
 
-      let showVal = (slider, valboxId) => {
-        document.getElementById("valboxId").innerHTML = slider.value + "%";
+      const showVal = (slider, valboxId) => {
+        document.getElementById(valboxId).innerHTML = slider.value + "%";
       };
 
       $(document).ready(function () {
