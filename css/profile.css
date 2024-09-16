@@ -1835,6 +1835,7 @@ body {
     background: #444;
     z-index: 8;
     left: 0;
+    display: none;
     padding-bottom: 20px;
   }
 
