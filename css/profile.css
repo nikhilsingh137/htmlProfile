@@ -83,7 +83,7 @@ body {
   width: 31%;
 }
 
-.main ul li.active a {
+.menuBar li.active a {
   color: #04b4e0;
 }
 
