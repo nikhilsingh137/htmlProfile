@@ -2559,4 +2559,17 @@ body {
   .study .file {
     width: 65%;
   }
+
+  .study1 {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .study1 .power1 {
+    width: 0;
+  }
+
+  .study1 .file1 {
+    width: 65%;
+  }
 }
